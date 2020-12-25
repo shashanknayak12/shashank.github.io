@@ -38,10 +38,11 @@ section{
     margin-bottom: 225px;
     margin: auto;
 }
-.about, .project, .skills, .experience, .contact, footer{
+.about, .qualification,.project,  .skills, .experience, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, 
+.about .about-content,
+.qualification .quali-content,
 .project .pro-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -167,7 +168,7 @@ section .title::after{
     filter: brightness(90%);
 }
 
-  
+
 /* home section styling */
 .home{
     display: flex;
@@ -261,6 +262,135 @@ section .title::after{
     color: rgb(184, 28, 119);
     background: none;
 }
+/*qualification section*/
+
+.qualification .quali-content{
+  margin-top: 156px;
+}
+.qualification, .experience{
+    color:#fff;
+    background: #121212;
+}
+.blue{
+   color:  #45a29e;
+   font-size: 20px;
+}
+.qualification .title::before,
+.experience .title::before{
+    background: #fff;
+}
+.qualification .title::after,
+.experience .title::after{
+    background: #111;
+    content: "Qualification";
+}
+.qualification .quali-content .card{
+    border: 2px solid #45a29e;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 32px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.qualification .quali-content .card2{
+  border: 2px solid #45a29e;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.qualification .quali-content .card3{
+  border: 2px solid #45a29e;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 32px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+
+.qualification .quali-content .card:hover{
+    background:  rgb(184, 28, 119);
+}
+.qualification .quali-content .card .box{
+    transition: all 0.3s ease;
+}
+.qualification .quali-content .card:hover .box{
+    transform: scale(1.05);
+}
+.qualification .quali-content .card i{
+    font-size: 50px;
+    color: rgb(184, 28, 119);
+    transition: color 0.3s ease;
+}
+.qualification .quali-content .card:hover i{
+    color: #fff;
+}
+.qualification .quali-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.qualification .quali-content .card2:hover{
+    background: rgb(184, 28, 119);
+}
+.qualification .quali-content .card2 .box{
+    transition: all 0.3s ease;
+}
+.qualification .quali-content .card2:hover .box{
+    transform: scale(1.05);
+}
+.qualification .quali-content .card2 i{
+    font-size: 50px;
+    color: rgb(184, 28, 119);
+    transition: color 0.3s ease;
+}
+.qualification .quali-content .card2:hover i{
+    color: #fff;
+}
+.qualification .quali-content .card2 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+.qualification .quali-content .card3:hover{
+    background: rgb(184, 28, 119);
+}
+.qualification .quali-content .card3 .box{
+    transition: all 0.3s ease;
+}
+.qualification .quali-content .card3:hover .box{
+    transform: scale(1.05);
+}
+.qualification .quali-content .card3 i{
+    font-size: 50px;
+    color: rgb(184, 28, 119);
+    transition: color 0.3s ease;
+}
+.qualification .quali-content .card3:hover i{
+    color: #fff;
+}
+.qualification .quali-content .card3 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 
 
 /* project section styling */
@@ -282,6 +412,7 @@ section .title::after{
     content: "what i did";
 }
 .project .pro-content .card{
+  border: 2px solid #d9514eff;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -292,6 +423,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .project .pro-content .card2{
+  border: 2px solid #d9514eff;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -302,6 +434,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .project .pro-content .card3{
+  border: 2px solid #d9514eff;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -313,6 +446,7 @@ section .title::after{
 }
 
 .project .pro-content .card4{
+  border: 2px solid #d9514eff;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -397,7 +531,7 @@ section .title::after{
 
 .project .pro-content .card4:hover {
     background: rgb(184, 28, 119);
-} 
+}
 .project .pro-content .card4 .box a{
     transition: all 0.3s ease;
 }
@@ -408,7 +542,7 @@ section .title::after{
     font-size: 50px;
     color: rgb(184, 28, 119);
     transition: color 0.3s ease;
-    
+
 }
 .project .pro-content .card4:hover i{
     color: #fff;
@@ -507,7 +641,7 @@ section .title::after{
 
 
 
-  
+
 
 /* experience section styling */
 
@@ -522,7 +656,7 @@ section .title::after{
     border-left: .1rem solid #fff;
     position: relative;
   }
-  
+
   .experience
  .box::after {
     content: '';
@@ -534,7 +668,7 @@ section .title::after{
     background: #fff;
     border-radius: 5rem;
   }
-  
+
   .experience
  .box .year {
     color: #fff;
@@ -545,21 +679,21 @@ section .title::after{
     color: #fff;
     font-size: 1.5rem;
   }
-  
+
   .experience
  .box h3 {
     font-size: 2rem;
     color: rgb(200, 101, 19);
     margin: 1rem 0;
   }
-  
+
   .experience
  .box p {
     color: #ccc;
     font-size: 1.5rem;
   }
 
-  
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -594,7 +728,7 @@ section .title::after{
     margin-top: 20px;
     font-size: 26px;
     color: rgb(184, 28, 119);
-  
+
 }
 .contact .contact-content .col i {
     margin-right: 15px;
@@ -624,7 +758,7 @@ section .title::after{
     margin-right: 10px;
 }
 .contact .right form .email{
-    margin-left: 10px;  
+    margin-left: 10px;
 }
 .contact .right form .field input,
 .contact .right form .textarea textarea{
@@ -773,6 +907,28 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+
+    .qualification .quali-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .qualification .quali-content .card2 {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        padding: 32px 25px;
+    }
+    .qualification .quali-content .card3 {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .qualification .quali-content .card4 {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+
     .project .pro-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -822,6 +978,22 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
+
+    .qualification .quali-content .card{
+        width: 100%;
+    }
+    .qualification .quali-content .card2 {
+        width: 100%;
+    }
+    .qualification .quali-content .card3 {
+        width: 100%;
+    }
+    .qualification .quali-content .card4 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
     .project .pro-content .card{
         width: 100%;
     }
@@ -845,7 +1017,7 @@ footer span a:hover{
     .home .home-content .text-2{
         font-size: 30px;
     }
-   
+
     .home .home-content .text-3{
         font-size: 15px;
     }
